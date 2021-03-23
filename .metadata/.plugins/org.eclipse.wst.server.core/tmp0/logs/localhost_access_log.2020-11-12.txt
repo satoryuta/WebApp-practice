@@ -1,0 +1,10 @@
+127.0.0.1 - - [12/Nov/2020:11:11:54 +0900] "GET /9_addpagelogic2/pages/greeting-in.jsp HTTP/1.1" 200 1727
+127.0.0.1 - - [12/Nov/2020:11:12:06 +0900] "GET /9_addpagelogic2/kadai9/sts?title=jjjjj&writer=iaedefrgtggt&publisher=gttrvk%2Crlk%2C&price=rlk%2Cvfvfl%2Cvl%2Cgvfpl%2Cvfvpl%2Cf&genre=1&stock=1&remarks=eceffrk%2Cvrk%2Cfk%2Crf HTTP/1.1" 200 1812
+127.0.0.1 - - [12/Nov/2020:11:12:33 +0900] "GET /9_addpagelogic2/kadai9/sts?title=jjjjj&writer=iaedefrgtggt&publisher=gttrvk%2Crlk%2C&price=rlk%2Cvfvfl%2Cvl%2Cgvfpl%2Cvfvpl%2Cf&genre=1&stock=1&remarks=eceffrk%2Cvrk%2Cfk%2Crf HTTP/1.1" 200 1812
+127.0.0.1 - - [12/Nov/2020:11:12:35 +0900] "GET /9_addpagelogic2/pages/greeting-in.jsp HTTP/1.1" 200 1727
+127.0.0.1 - - [12/Nov/2020:11:12:39 +0900] "GET /9_addpagelogic2/kadai9/sts?title=&writer=&publisher=&price=&stock=1&remarks=adfgfrfr HTTP/1.1" 500 1535
+127.0.0.1 - - [12/Nov/2020:11:12:59 +0900] "GET /9_addpagelogic2/kadai9/sts?title=&writer=&publisher=&price=%EF%BC%91%EF%BC%92%EF%BC%93%EF%BC%94&stock=1&remarks=adfgfrfr HTTP/1.1" 500 1535
+127.0.0.1 - - [12/Nov/2020:11:13:09 +0900] "GET /9_addpagelogic2/kadai9/sts?title=&writer=&publisher=&price=%EF%BC%91%EF%BC%92%EF%BC%93%EF%BC%94%EF%BD%9A%EF%BD%93%EF%BD%83%EF%BD%83%EF%BD%93%EF%BD%97%EF%BD%97%EF%BD%93%EF%BD%98%EF%BD%97%EF%BD%93%EF%BD%98&genre=3&stock=1&remarks=adfgfrfr HTTP/1.1" 200 1781
+0:0:0:0:0:0:0:1 - - [12/Nov/2020:11:18:44 +0900] "GET /9_addpagelogic2/pages/greeting-in.jsp HTTP/1.1" 200 1727
+0:0:0:0:0:0:0:1 - - [12/Nov/2020:11:18:52 +0900] "GET /9_addpagelogic2/kadai9/sts?title=&writer=&publisher=&price=&genre=2&stock=1&remarks=%E3%81%82%E3%81%A0%EF%BD%84 HTTP/1.1" 200 1747
+0:0:0:0:0:0:0:1 - - [12/Nov/2020:11:18:55 +0900] "GET /9_addpagelogic2/pages/greeting-in.jsp HTTP/1.1" 200 1727

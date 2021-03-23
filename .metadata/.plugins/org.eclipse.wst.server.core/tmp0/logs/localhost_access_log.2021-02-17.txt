@@ -1,0 +1,5 @@
+127.0.0.1 - - [17/Feb/2021:15:26:44 +0900] "GET / HTTP/1.1" 404 1208
+0:0:0:0:0:0:0:1 - - [17/Feb/2021:15:26:50 +0900] "GET /11_dispatch/greeting-in.jsp HTTP/1.1" 200 1800
+0:0:0:0:0:0:0:1 - - [17/Feb/2021:15:26:53 +0900] "GET /11_dispatch/kadai11/sts?title=&writer=&publisher=&price=&stock=1&remarks= HTTP/1.1" 500 1905
+0:0:0:0:0:0:0:1 - - [17/Feb/2021:15:27:05 +0900] "GET /11_dispatch/kadai11/sts?title=&writer=&publisher=&price=&stock=1&remarks= HTTP/1.1" 500 1905
+0:0:0:0:0:0:0:1 - - [17/Feb/2021:15:27:18 +0900] "GET /11_dispatch/kadai11/sts?title=&writer=&publisher=&price=aaaa&stock=1&remarks= HTTP/1.1" 500 1943

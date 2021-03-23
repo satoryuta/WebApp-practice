@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;7_contextpath/WebContent/page/callhello.jsp&apos; to &apos;callhello2.jsp&apos;" description="Rename resource &apos;callhello.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/page/callhello.jsp" name="callhello2.jsp" stamp="1603932471638" updateReferences="true"/>
+</session>
