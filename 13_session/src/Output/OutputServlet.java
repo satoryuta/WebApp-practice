@@ -5,16 +5,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import Bean.BookBean;
-
 import java.util.Arrays;
 import java.util.List;
-
-
-
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet(urlPatterns={"/kadai11/sts"})
+@WebServlet(urlPatterns={"/kadai13/sts"})
 public class OutputServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request,
@@ -23,8 +20,8 @@ public class OutputServlet extends HttpServlet {
 		
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
-		
-		
+	
+		HttpSession sessoin = request.getSession();
 		
 		PrintWriter out = response.getWriter();
 		//beanクラスのオブジェクト生成
@@ -74,7 +71,7 @@ public class OutputServlet extends HttpServlet {
 		boolean resultCheck = validator.requireCheck(bbean.getTitle(), bbean.getWritter(), bbean.getPrice(), genre_cnt);
 		System.out.print(resultCheck);	
 		
-		request.setAttribute("bookdata", bbean);
+		sessoin.setAttribute("bookdata", bbean);
 		
 		if (resultCheck == false) {
 			bbean.setErrorMsg(validator.errorsResult());

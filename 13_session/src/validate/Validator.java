@@ -54,18 +54,7 @@ public class Validator {
         
         
         
-	     
-  
-		//*	try {
-		//priceint = Integer.parseInt(price,10);
-		//}catch(NumberFormatException e) {
-		//}
-		//try{なんか変数　 = 文字を取得.parseInt(それ);}
-		//if(マイナス判定)
-		//catch(文字の場合はparseでintにへんかんできないのでエラーがでる) {
-		//こっちで値を返
-		//}
-        
+	    
         return result;
     }
     

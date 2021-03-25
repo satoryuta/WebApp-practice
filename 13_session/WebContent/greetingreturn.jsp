@@ -1,8 +1,10 @@
 <%@page contentType="text/html; charset=UTF-8" %>
 <%@page import="Bean.BookBean" %>
-<% BookBean bbean=(BookBean)request.getAttribute("bookdata");%>
+<% BookBean bbean=(BookBean)session.getAttribute("bookdata");%>
 
 <!-- 正常入力時の確認画面のjsp -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +14,7 @@
 <body>
     <h2>■書籍在庫管理システム</h2>
         <h3>　【書籍登録画面】</h3>
-         <form action="<%=request.getContextPath()%>/greeting-in.jsp">
+         <form action="<%=request.getContextPath()%>/greeting-comp.jsp">
             <table>
                 <tr><td>　　</td><td>タイトル</td><td><input type="text" name="title" disabled="disabled" value="<%=bbean.getTitle()%>" /></td></tr>
                 <tr><td></td><td>著者</td><td><input type="text" name="writer" disabled="disabled" value="<%=bbean.getWritter()%>" /></td></tr>
@@ -25,13 +27,13 @@
                     <input type="checkbox" name="genre" value="3" disabled="disabled" "  <%=bbean.getGenreList().get(3) %>/>教養
                     <input type="checkbox" name="genre" value="4" disabled="disabled" "  <%=bbean.getGenreList().get(4) %>/>趣味</td></tr>
                 <tr><td></td><td>在庫</td><td>
-                    <input type="radio" name="stock" value="1" disabled="disabled" <%=bbean.isStock()?"checked":"" %>/>あり
-                    <input type="radio" name="stock" value="0" disabled="disabled" <%=bbean.isStock()? "":"checked"%>/>なし</td></tr>
+                    <input type="radio" name="stock" value="1" disabled="disabled"<%=bbean.isStock()?"checked":"" %>/>あり
+                    <input type="radio" name="stock" value="0" disabled="disabled"<%=bbean.isStock()? "":"checked"%>/>なし</td></tr>
                     
                 <tr><td></td><td>備考</td><td><textarea name="remarks" cols="40" rows="4" disabled="disabled"><%=bbean.getRemarks() %></textarea></td></tr>
-                <tr><td></td><td height="30" disabled="disabled"></td><td></td></tr>
+                <tr><td></td><td height="30"></td><td></td></tr>
                 <tr><td></td><td></td><td align="right">
-                    <input type="submit" value="キャンセル" /></td></tr>
+                    <input type="submit" value="完了" /></td></tr>
             </table>
         </form>
 </body>
