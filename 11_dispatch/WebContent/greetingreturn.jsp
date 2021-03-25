@@ -25,11 +25,11 @@
                     <input type="checkbox" name="genre" value="3" disabled="disabled" "  <%=bbean.getGenreList().get(3) %>/>教養
                     <input type="checkbox" name="genre" value="4" disabled="disabled" "  <%=bbean.getGenreList().get(4) %>/>趣味</td></tr>
                 <tr><td></td><td>在庫</td><td>
-                    <input type="radio" name="stock" value="1" disabled="disabled" <%=bbean.isStock()?"checked":"" %>/>あり
-                    <input type="radio" name="stock" value="0" disabled="disabled" <%=bbean.isStock()? "":"checked"%>/>なし</td></tr>
+                    <input type="radio" name="stock" value="1"<%=bbean.isStock()?"checked":"" %>/>あり
+                    <input type="radio" name="stock" value="0" <%=bbean.isStock()? "":"checked"%>/>なし</td></tr>
                     
-                <tr><td></td><td>備考</td><td><textarea name="remarks" cols="40" rows="4" disabled="disabled"><%=bbean.getRemarks() %></textarea></td></tr>
-                <tr><td></td><td height="30" disabled="disabled"></td><td></td></tr>
+                <tr><td></td><td>備考</td><td><textarea name="remarks" cols="40" rows="4"><%=bbean.getRemarks() %></textarea></td></tr>
+                <tr><td></td><td height="30"></td><td></td></tr>
                 <tr><td></td><td></td><td align="right">
                     <input type="submit" value="キャンセル" /></td></tr>
             </table>

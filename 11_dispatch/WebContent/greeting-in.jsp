@@ -21,7 +21,7 @@
         <h3>　【書籍登録画面】</h3>
         
         
-        <form action="<%=request.getContextPath()%>/kadai11/sts"　method="Get">
+        <form action="http://localhost:8080/11_dispatch/kadai11/sts"　method="Get">
             <table>
                 <tr><td>　　</td><td>タイトル</td><td><input type="text" name="title" value="<%= bbean.getTitle()%>" /></td></tr>
                 <tr><td></td><td>著者</td><td><input type="text" name="writer" value="<%=bbean.getWritter()%>" /></td></tr>

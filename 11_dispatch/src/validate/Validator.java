@@ -25,7 +25,7 @@ public class Validator {
         	result = false;
         }
         
-        if(writer.length() > 10) {	
+        if(writer.length() >= 10) {	
         	errors.append("¡’˜Ò‚Í10•¶šˆÈ“à‚Å“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B<br>");
         	result = false;
         }
