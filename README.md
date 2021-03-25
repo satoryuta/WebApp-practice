@@ -12,7 +12,7 @@
 #### 参考書籍
 * 基礎からのサーブレット/JSP　新版
 
-## awsを使いデプロイ
+## awsを使いデプロイ(AWS Elastic Beanstalkを使用)
 ###### 以下のリンクから確認できます
 
 * 1_index
@@ -30,8 +30,7 @@ setContetTypeで文字コードUTF-8​、ファイル保存時の文字コー�
 →文字化けあり
 
 * [4_htmloutput](http://testserver-env.eba-fd8mjnqp.us-east-1.elasticbeanstalk.com/4_htmloutput/kadai4/sts)
-  ランダム文字列を生成し、「白い」が含まれるときは表示される文字色を白に
-「赤い」が含まれるときは文字色を赤で出力。
+  ランダム文字列を生成し、「白い」が含まれるときは表示される文字色を白に「赤い」が含まれるときは文字色を赤で出力。（白いが含まれる時は背景色と同化し文字は見えません）
 * [5_entry](http://testserver-env.eba-fd8mjnqp.us-east-1.elasticbeanstalk.com/5_entry/hello.jsp)
 JSPの作成
 JSPは「スクリプトレット、暗黙的オブジェクト、ディレクティブ」
